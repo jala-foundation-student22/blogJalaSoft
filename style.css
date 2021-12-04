@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+:root{
+    --primaryColor: #274A2A;
+    --postBackground: #809F39;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: var(--primaryColor);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+h1{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.post{
+    position: relative;
+    background-color: var(--postBackground);
+    padding: 21px;
+    margin: 34px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 72vw;
+    max-width: 850px;
+    /*box-shadow: 0 3px 4px #222;*/
+    border-radius: 5px;
+}
+
+.date-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: -20px;
+    right: 15px;
+    font-size: 10pt;
+    font-style: italic;
+    padding: 5px;
+}
+
+.post .post-title{
+    margin-bottom: 3px;
+}
+
+.post .post-body{
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.submitPost{
+    width: 35%;
+    padding: 1%;
+    font-size: 18pt;
+    background-color: #d3e29D;
+    border-radius: 5px;
+    margin-bottom: 10px;
+} 
+
+
+.newpost{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+
+.newpost{
+    display: none;
+}
+
+#npost-date{
+    padding: 1%;
+    margin: 1%;
+}
+
+#npost-title, #npost-body {
+    width: 100%;
+    padding: 1%;
+    margin: 1%;
+}
+
+#npost-body {
+    height: 80px;
+}
+
+#submit{
+    width: 20%;
+    padding: 1%;
+    margin-bottom: 20px;
+    background-color: #d3e29D;
+    margin-left: 45%;
+}
+
+#options-btn {
+    display: inline-block;
+    font-size: 18px;
+    padding: 4px;
+    margin: 5px;
+    letter-spacing: 1px;
+    background-color: #d3e29D;
+    border-radius: 50%;
+    color:#274A2A;
+    cursor: pointer;
+}
+#options-menu{
+    width: 20%;
+    display: none;
+    position: absolute;
+    top: -30px;
+    right: 15px;
+    background-color: #d3e29D;
+    color: #274A2A;
+}
